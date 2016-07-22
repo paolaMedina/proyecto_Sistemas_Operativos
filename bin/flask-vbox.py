@@ -27,7 +27,7 @@ def ostypes():
 @app.route('/vms',methods = ['GET'])
 def listvms():
 	output = subprocess.check_output(['VBoxManage', 'list', 'vms'])
-	return outpu
+	return output
 
 # 2.2) Este metodo retorna aquellas maquinas que se encuentran en ejecucion al acceder al web service desde la linea de comandos
 #usando el comando curl mas el URL: curl http://localhost:5000/vms/runnings
