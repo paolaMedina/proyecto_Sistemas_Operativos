@@ -16,7 +16,6 @@ app = Flask(__name__)
 # Solucion del item 1.
 @app.route('/vms/ostypes',methods = ['GET'])
 def ostypes():
-	output1 = "Work to be done\n"
 	output = subprocess.check_output(['VBoxManage', 'list', 'ostypes'])
 	return output
 
